@@ -4,37 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desky - Open Source Macropad with Magnetic I2C Connectors</title>
+  <!-- Import Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fafafa;
+      color: #333;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
     }
     header {
-      background-color: #333;
-      color: white;
+      background-color: #1e1e1e;
+      color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      font-weight: 700;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      font-weight: 400;
     }
     section {
-      padding: 20px;
+      padding: 40px 20px;
       margin: 20px;
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
     }
-    h1, h2 {
-      color: #333;
+    h2 {
+      font-size: 28px;
+      color: #222;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    p, ol, ul {
+      font-size: 16px;
+      line-height: 1.6;
     }
     a {
-      color: #0066cc;
+      color: #555;
       text-decoration: none;
     }
-    footer {
-      text-align: center;
-      padding: 10px;
+    a:hover {
+      color: #1e1e1e;
+      text-decoration: underline;
+    }
+    .cta-button {
+      display: inline-block;
       background-color: #333;
       color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #555;
+    }
+    footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    footer a {
+      color: #ccc;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    .image-gallery {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .image-gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      cursor: pointer;
     }
     .feature-list, .links {
       list-style: none;
@@ -43,30 +99,18 @@
     .feature-list li, .links li {
       margin: 10px 0;
     }
-    .cta-button {
-      display: inline-block;
-      background-color: #0066cc;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-    .cta-button:hover {
-      background-color: #004d99;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Desky</h1>
-    <p>Your open-source macropad with magnetic I2C connectors.</p>
+    <h1>Desky: Open Source Macropad</h1>
+    <p>Featuring magnetic I2C connectors for modularity and ease of use.</p>
   </header>
 
   <!-- Section: Introduction -->
   <section id="introduction">
     <h2>What is Desky?</h2>
-    <p>Desky is a customizable macropad with magnetic I2C connectors, allowing you to add modules to your setup with ease. It’s perfect for developers, creators, and anyone who wants to streamline their workflow with physical shortcuts.</p>
+    <p>Desky is an innovative, customizable macropad with magnetic I2C connectors. It allows you to add modules to expand functionality with ease. Perfect for developers, creators, and anyone looking to streamline their workflow with physical macros and shortcuts.</p>
   </section>
 
   <!-- Section: Features -->
@@ -90,31 +134,48 @@
       <li>Connect Desky to your computer using the provided cable.</li>
       <li>Install the necessary drivers (if any).</li>
       <li>Customize the key layout and macros using the Desky configuration software.</li>
-      <li>Enjoy the convenience of having physical macros for your favorite shortcuts!</li>
+      <li>Start using your macropad and improve your productivity with customizable shortcuts!</li>
     </ol>
   </section>
 
   <!-- Section: Open Source Files -->
   <section id="opensource">
     <h2>Open Source Files</h2>
-    <p>Desky is completely open source. You can find the hardware files, firmware, and software in our GitHub repository:</p>
+    <p>Desky is fully open-source. You can access all the hardware files, firmware, and software via our GitHub repository:</p>
     <ul class="links">
-      <li><a href="https://github.com/yourusername/desky" target="_blank">GitHub Repository</a></li>
+      <li><a href="https://github.com/yourusername/desky" target="_blank">Visit the GitHub Repository</a></li>
       <li><a href="https://github.com/yourusername/desky/releases" target="_blank">Download Latest Firmware</a></li>
     </ul>
+  </section>
+
+  <!-- Section: Gerber Files (Image Placeholders as Links) -->
+  <section id="gerber">
+    <h2>Gerber Files</h2>
+    <p>Here are the Gerber files for Desky. These files are available for you to view, modify, and use as part of your own projects. Click on the images to view or download the full-size versions from the hosting platform.</p>
+    <div class="image-gallery">
+      <a href="https://www.amazon.com/your-gerber-image-link-1" target="_blank">
+        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Gerber+File+1" alt="Gerber File 1">
+      </a>
+      <a href="https://www.amazon.com/your-gerber-image-link-2" target="_blank">
+        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Gerber+File+2" alt="Gerber File 2">
+      </a>
+      <a href="https://www.amazon.com/your-gerber-image-link-3" target="_blank">
+        <img src="https://via.placeholder.com/300x200/cccccc/ffffff?text=Gerber+File+3" alt="Gerber File 3">
+      </a>
+    </div>
   </section>
 
   <!-- Section: Beta Participation -->
   <section id="beta">
     <h2>Join the Beta</h2>
-    <p>Desky is still in beta, and we would love for you to participate! If you're interested in helping test the device and provide feedback, please sign up:</p>
-    <a href="https://github.com/yourusername/desky/issues" class="cta-button">Sign up for Beta Testing</a>
+    <p>Desky is still in beta, and we’d love for you to participate! If you're interested in helping test the device and provide feedback, please sign up:</p>
+    <a href="https://github.com/yourusername/desky/issues" class="cta-button">Sign Up for Beta Testing</a>
   </section>
 
   <!-- Section: Future Purchase -->
   <section id="purchase">
     <h2>Buy Desky (Coming Soon)</h2>
-    <p>We’re working on offering Desky for sale. Stay tuned for updates on availability and pricing!</p>
+    <p>Desky will soon be available for purchase. Stay tuned for more updates on pricing and availability!</p>
   </section>
 
   <!-- Footer: Contact -->
