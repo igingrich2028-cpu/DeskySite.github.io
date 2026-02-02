@@ -115,10 +115,7 @@
     <section id="introduction">
       <h2>What is Desky?</h2>
       <p>
-        Desky is an innovative, customizable macropad with magnetic expansion connectors.
-        You can easily add modules to expand Desky's functionality. Perfect for developers,
-        creators, and anyone looking to streamline their workflow while learning programming
-        and electronics.
+        Desky is an open-source macro pad with expansion ports on 3 sides for easy customization. It not only looks great on your desk but also helps you learn important programming and electronics skills.
       </p>
     </section>
 
@@ -138,36 +135,41 @@
     <!-- Installation -->
     <section id="installation">
       <h2>Installation & Usage</h2>
-      <p>To get Desky and get started, follow these steps:</p>
+      <p>Follow these steps to assemble and set up Desky:</p>
       <ol>
         <li>
-          Go to the GitHub repository and download the PCB files:
-          <a href="https://github.com/igingrich2028-cpu" target="_blank">GitHub repository</a>.
+          Order the Desky PCB from PCBWay or a similar service.
         </li>
         <li>
-          Go to PCBWay or a similar service to manufacture and assemble the Desky PCB.
+          Gather the necessary components:
+          <ul>
+            <li>Desky PCB</li>
+            <li>Adafruit KB2040</li>
+            <li>(5x) 6mm Push Buttons</li>
+            <li>(3x) 4 Pin Socket</li>
+            <li>(3) RGB LEDs</li>
+            <li>Soldering equipment (or have the PCB assembled by a service)</li>
+          </ul>
         </li>
-        <li>
-          Connect Desky to your computer using the provided cable.
-        </li>
-        <li>
-          Drag and drop the Desky <code>.UF2</code> file to the drive that appears.
-        </li>
-        <li>
-          Customize Desky's macros and key layout using the provided tools.
-        </li>
-        <li>
-          Start using Desky to improve your workflow and learn fundamental programming concepts.
-        </li>
+        <li>Solder all components onto the Desky PCB.</li>
+        <li>Connect the Adafruit KB2040 to your PC using a USB-C data cable.</li>
+        <li>Download the latest software for Desky, typically named "code.py".</li>
+        <li>Navigate to the KB2040 drive on your PC, delete the existing "code.py", and copy the new one from the Desky bundle.</li>
+        <li>Press the reset button on the KB2040 to complete installation.</li>
       </ol>
+    </section>
+
+    <!-- 3D Case -->
+    <section id="3d-case">
+      <h2>3D Printed Case</h2>
+      <p>We are currently developing 3D case files for Desky, which will be available soon.</p>
     </section>
 
     <!-- Open Source -->
     <section id="opensource">
       <h2>Open Source Files</h2>
       <p>
-        Desky is fully open-source. You can access all hardware files, firmware,
-        and software via GitHub:
+        Desky is fully open-source. Access all hardware files, firmware, and software via GitHub:
       </p>
       <ul class="links">
         <li><a href="https://github.com/igingrich2028-cpu/Desky" target="_blank">GitHub Repository</a></li>
@@ -177,9 +179,7 @@
     <!-- Gerbers -->
     <section id="gerber">
       <h2>Gerber Files</h2>
-      <p>
-        The Gerber files are available for viewing and modification at <a href="https://github.com/igingrich2028-cpu/Desky" target="_blank">GitHub Repository</a><
-      </p>
+      <p>The Gerber files are available for viewing and modification at the <a href="https://github.com/igingrich2028-cpu/Desky" target="_blank">GitHub Repository</a>.</p>
       <div class="image-gallery">
         <a href="https://postimg.cc/Lhn3ybX6" target="_blank">
           <img src="https://i.postimg.cc/05CXNg1m/Desky-1.png" alt="Desky Gerber File 1">
@@ -197,8 +197,7 @@
     <section id="beta">
       <h2>Join the Beta</h2>
       <p>
-        Desky is still in beta, and we’d love your feedback. Help test the device
-        and shape its future.
+        Desky is still in beta, and we’d love your feedback. Help test the device and shape its future.
       </p>
       <a href="https://github.com/yourusername/desky/issues" class="cta-button">
         Sign Up for Beta Testing
